@@ -69,6 +69,23 @@
             height: auto;
             margin-left: 0.2%;
         }
+        #inner1sec2left{
+            height: auto;
+            position:relative;
+            width:50%;
+
+        }
+        #middle{
+            height: auto;
+            width: 30%;
+            position: relative;
+
+        }
+        #inner1sec2right{
+            height:auto;
+            position: relative;
+            width:20%;
+        }
         .third{
             display:flex;
             width:auto;
@@ -79,14 +96,16 @@
             margin-right: 2%;
         }
         #innerThird1{
-           width:20%;
+           width:15%;
             background-image: url("task2img2.png");
             background-repeat: repeat;
 
         }
         #innerThird2{
-            width: 80%;
+            width: 85%;
             background-color: white;
+            display: flex;
+            justify-content: space-around;
         }
         .fourth{
             display: flex;
@@ -147,6 +166,7 @@
         background-image: url("task2img2.png");
         height: 50%;
         position: relative;
+        padding: 2%;
     }
         #ILB51{
             background-color: white;
@@ -178,6 +198,23 @@
             margin-bottom: 0.15%;
 
         }
+        .inright2-1{
+            margin-top: 1%;
+            margin-left: 3%;
+            color: grey;
+        }
+        .inright2-2{
+            margin-top: 1%;
+            font-size: large;
+            margin-left: 5.25%;
+            color: grey;
+        }
+        .inright2-3{
+            margin-top: 1%;
+            float: right;
+            margin-right: 2%;
+            color: gray;
+        }
         #right3{
         height:6%;
             background-color: white;
@@ -199,7 +236,10 @@
         }
         #right7{
             background-image: url("task2img1.png");
-            height:30%
+            height:30%;
+            display: flex;
+            justify-content: space-around;
+
         }
         #right8{
             height:27%;
@@ -219,6 +259,16 @@
             background-color: white;
             margin-left: 0.4%;
         }
+        .im1{
+           background-image: url("pictask2icn.png");
+            background-repeat: no-repeat;
+            height: 135px;
+            width: 108px;
+            margin-top: 5.2%;
+
+
+        }
+
         .sixth{
             display: flex;
             position: relative;
@@ -229,6 +279,14 @@
             margin-bottom: 2.5%;
             margin-left: 2%;
             margin-right: 2%;
+        }
+        .dots{
+            display: inline;
+            margin-top: 3.5%;
+            position: relative;
+            color: grey;
+            font-size: larger;
+
         }
 
 
@@ -241,9 +299,9 @@
         <div class="head1" id="sec1div1">
 
             <i class="fa fa-bars" style="font-size: 250% ;margin-top: 1%;color: darkgrey"></i>
-            <i class="fa fa-minus" aria-hidden="true" style="margin-left:67%;font-size: 300%;color: darkgrey"></i>
-       &nbsp;&nbsp;     <i class="fa fa-minus" aria-hidden="true"style="font-size: 300%;color: darkgrey"></i>
-            &nbsp;&nbsp;    <i class="fa fa-minus" aria-hidden="true" style="font-size: 300%;color: darkgrey"></i>
+            <i class="fa fa-minus" aria-hidden="true" style="margin-left:67%;font-size: 320%;color: darkgrey"></i>
+           &nbsp;&nbsp;<i class="fa fa-minus" aria-hidden="true"style="font-size: 320%;color: darkgrey"></i>
+            &nbsp;&nbsp;<i class="fa fa-minus" aria-hidden="true" style="font-size: 320%;color: darkgrey"></i>
         </div>
         <div class="head1" id="sec1div2">
         <textarea cols="35" rows="1" placeholder="Search" style="margin-left:40% "></textarea>
@@ -255,10 +313,24 @@
     <div class="second" id="section2">
         <div class="inner1second" id="inner1sec2">
             <div id ="inner1sec2left" style="font-family: sans-serif;">
-
+                <h1 style="color: white">myBank</h1>
+                <p style="color:white;">
+                    Welcome to mybank,<br>
+                    Your last login yesterday 6:44pm.
+                </p>
+            </div>
+            <div id ="middle">
+                <i class="fa fa-user-circle"  style="font-size: 150%;
+                margin-top:20%; height:50%;width:50%;"></i>
+                <i class="fa fa-user-circle" aria-hidden="true"></i>
+                <i class="fas fa-user-circle"></i>
             </div>
             <div id="inner1sec2right">
-                <span style="float:right">   <i class="fa fa-cog" aria-hidden="true" ></i></span>
+
+            <i class="fa fa-cog" style="float: right;margin-left: 95%;position: relative;font-size: 150%;color: white" >
+
+            </i>
+                <i class="fa fa-bell-o" aria-hidden="true" style="float:right;margin-top: 26%;font-size: 150%;color:white;"></i>
             </div>
         </div>
         <div class="inner2second" id="inner2sec2">
@@ -273,39 +345,193 @@
     </div>
     <div class="third" id="section3">
         <div id="innerThird1">
-
+            <i class="fa fa-plus-circle" style="margin-top: 12%;margin-left: 33%;
+            font-size: 350%; color: white"></i><br><span style="margin-left: 23%;font-size: larger;color: white">
+          <b>Take a Look</b>
+             </span>
         </div>
         <div id="innerThird2">
-
+            <div class="dots"><i class="fa fa-circle" aria-hidden="true" style="margin-left: 28% ;color: darkgrey;font-size: xx-large"></i><br>
+                Account
+            </div>
+            <div class="dots"><i class="fa fa-circle" aria-hidden="true" style="margin-left: 28%;color: darkgrey;font-size: xx-large"></i><br>Overdraft
+            </div>
+            <div class="dots"><i class="fa fa-circle" aria-hidden="true" style="margin-left: 28%;color: darkgrey;font-size: xx-large"></i><br>Credits
+            </div>
+            <div class="dots"><i class="fa fa-circle" aria-hidden="true" style="margin-left: 28%;color: darkgrey;font-size: xx-large"></i><br>Payments
+            </div>
+            <div class="dots"><i class="fa fa-circle" aria-hidden="true" style="margin-left: 28%;color: darkgrey;font-size: xx-large"></i><br>Deposits
+            </div>
+            <div class="dots"><i class="fa fa-circle" aria-hidden="true" style="margin-left: 24%;color: darkgrey;font-size: xx-large"></i><br>Cards
+            </div>
         </div>
     </div>
     <div class="fourth" id ="section4">
-        <div id="sec4div1" ></div>
-        <div id ="sec4div2"></div>
-        <div id ="sec4div3">
+        <div id="sec4div1" style="padding: 0.5%;color: white">
+            <b> Credit card<br>
+                **** **** **** *342</b>
+          <!--  <div class="fourthDivbtw" style="height:30%;margin-top: 30%;width:auto;position: relative;display:flex;">
+            <div id="btw1">-->
+            <p style="margin-top: 10.5%;font-size: small;color: white">
+            Total credit card Limit: <i class="fa fa-gbp" aria-hidden="true"></i>3000<br>
+            Available: <i class="fa fa-gbp" aria-hidden="true"></i>5000
+
+              <!--  <div id ="btw2">-->
+                <span style=" float:right;margin-top: -3.65%">
+                    <button type="submit" style="color: grey;background-color: white;
+                        height:28px;width:100px"><b>BUTTON</b></button>
+                </span>
 
         </div>
-        <div id ="sec4div4"></div>
+        <div id ="sec4div2" style="padding: 0.5%;color: gray">
+            <b> Urgent Payment Pending<br>
+                **** **** **** *342</b><br>
+            <span style="font-size: xx-large"> <i class="fa fa-gbp" aria-hidden="true"></i>2000</span>
+            <p style="color: gray;font-size: small;padding: 1%;margin-top: -1.5%">Monthly Pending Payments<br>
+                <b> Total:<i class="fa fa-gbp" aria-hidden="true"></i>3000</b>
+                <span style="float: right;margin-top: -3.65%"><button type ="submit" style="color: grey;background-color: white;
+                        height:28px;width:100px"><b>PAY NOW</b></button> </span>
+            </p>
+        </div>
+        <div id ="sec4div3" style="padding: 0.5%;color: gray">
+            <b>Investments</b><br>
+            <i class="fa fa-gbp" aria-hidden="true"></i>4,000<br><br><br>
+            Total: <i class="fa fa-gbp" aria-hidden="true"></i>14,000
+            <span style="float:right">
+                <button style="color: gray;background-color: white;height:28px;width:100px">
+                    DETAILS</button></span>
+
+        </div>
+        <div id ="sec4div4" style="padding: 0.5%;color: gray">
+            <b>Documents</b>
+            <br> <span style="font-size:large">
+            You have <br>
+            two new Documents<br></span>
+
+            <b> 1 important</b><span style="float: right">
+            <button style="color: gray;background-color: white;height:28px;width:100px">
+                DETAILS
+            </button></span>
+        </div>
     </div>
     <div class="fifth" id ="section5">
         <div class="fifthInnerLeft" >
-            <div id="inner5leftTop"></div>
+            <div id="inner5leftTop" style="color: white">
+                OUR SERVICES AND PRODUCTS
+                <br><br>
+                <span style="font-size: xx-large;color: white"> <b><u>Product</u> Name</b></span>
+                <br><div class ="test" style="display: flex"><div> <i class="fa fa-minus"  style="font-size: 500%;color: white">
+
+                 </i></div>
+                <div style="height:20px;margin-left: 70%; width: 20px;background-color: white;border-radius: 50%"></div>
+                <br></div>
+                <textarea rows="2" cols="30"></textarea>
+
+                <br>
+                <br>
+                <button style="height: 30px; width:140px;background-color: white;color: grey;margin-left:15%;border-radius: 2%">
+                    DISCOVER NOW</button>
+
+            </div>
             <div class="inner5leftBottom">
-                <div  id="ILB51"></div>
+                <div  id="ILB51" style="color: white">
+                    <div id="calender" style="padding: 1.5%; color:grey;font-size: larger;margin-left:2.5%;margin-top: 1%">CALENDER</div>
+                    <div class="circle" style="display: flex;margin-left: 20%;margin-top: 5%">
+                        <div id="4" style="height:35px;width:35px;font-size: xx-large; border-radius:50%;background-color: darkgrey">
+                        <center>4</center></div>
+                        <div id="27" style="font-size: 6em;height:120px;width:120px;border-radius: 50%;background-color: grey">
+                           <center>27</center>
+                        </div>
+                        <div id="30" style="font-size: xx-large;height:45px;width: 45px;border-radius: 50%;background-color: darkgrey">
+                          <center>  30</center>
+                        </div>
+
+                    </div>
+                    <div class="circle2" style="display: flex;margin-left: 20%;">
+                        <div id="18" style="font-size: xx-large;height:50px;width:50px;border-radius: 50%;background-color: grey">
+                            <center>18</center>
+                        </div>
+                        <div id="8" style="margin-left:33%;height:35px;width:35px;font-size: xx-large; border-radius:50%;background-color: darkgrey">
+                            <center>8</center>
+                        </div>
+
+                    </div>
+                    <div class="sign" style="display: flex">
+                        <div id="inSign" style="margin-left:3%;height:35px;width:35px;font-size: xx-large; border-radius:50%;background-color: darkgrey"></div>
+                        &nbsp;&nbsp;<div style="color: grey">important dates of month for the payment</div>
+                    </div>
+                </div>
                 <div id="ILB2"></div>
             </div>
 
         </div >
         <div class = "fifthInnerRight">
             <div id="right1">
+                <i class="fa fa-credit-card" style="margin-top: 2%;font-size: large;color: white"></i>&nbsp; &nbsp;
+                <span style="margin-top:2%;color: white;font-size: large;"> <b>Transactions</b></span>
+                <form action="#" method="post" id="transaction" style="float: right;margin-right: 1%">
+                <select form ="transaction" name="month" style="width:130px;background-color: white;color: grey;margin-top:10%; ">
+                    <option >Month</option>
+                    <option>Jan</option>
+                     <option>Feb</option>
+                     <option>march</option>
+                     <option>april</option>
+                     <option>may</option>
+                     <option>June</option>
+                     <option>July</option>
+                     <option>August</option> <option>sept</option>
+                     <option>October</option> <option>Nov</option> <option>Dec</option>
+                </select>
+            </form>
+                <span style="float: right;margin-top: 2%;color: white;font-size: large">
+                    <b> Spend By</b> &nbsp;&nbsp;</span>
 
             </div>
-            <div id="right2"></div>
-            <div id="right3"></div>
-            <div id="right4"></div>
-            <div id="right5"></div>
+            <div id="right2">
+                <span class="inright2-1">Today</span>
+                <span class="inright2-2">Card transaction Paypal-26/02/2016</span>
+                <span class="inright2-3"><b>
+                    <i class="fa fa-gbp" aria-hidden="true"></i>22.00
+                </b></span>
+
+            </div>
+            <div id="right3">
+                <span class="inright2-1">Today</span>
+                <span class="inright2-2">Money transfer rentals-10/01/2016</span>
+                <span class="inright2-3"><b>
+                    <i class="fa fa-gbp" aria-hidden="true"></i>+324.00
+                </b></span>
+            </div>
+            <div id="right4">
+                <span class="inright2-1">Today</span>
+                <span class="inright2-2">Card Purchase offer-17/02/2016</span>
+                <span class="inright2-3"><b>
+                    <i class="fa fa-gbp" aria-hidden="true"></i>+824.00
+                </b></span>
+            </div>
+            <div id="right5">
+                <span class="inright2-1">Today</span>
+                <span class="inright2-2">Card transaction Paypal-26/02/2016</span>
+                <span class="inright2-3"><b>
+                    <i class="fa fa-gbp" aria-hidden="true"></i>+449.00
+                </b></span>
+            </div>
             <div id="right6"></div>
-            <div id="right7"></div>
+            <div id="right7">
+               <!-- <img src="pictask2icn_jvn_icon.ico" height="200%" width="200%">
+                <img src="pictask2icn_jvn_icon.ico" height="200%" width="200%">
+                <img src="pictask2icn_jvn_icon.ico" height="200%" width="200%"> -->
+                <div style="height: auto;width: 40% ; margin-top: 4%;margin-left: 3%;font-size: small;color: grey">
+                    <b> TOTAL SPENDINGS OF FEBRUARY</b>
+                   <br>
+
+                <i class="fa fa-area-chart" aria-hidden="true" style="font-size: 600%"></i>
+                    </div>
+                <div class="im1"><span style="margin-top: -3%">LIVING</span></div>
+                <div class="im1">FAMILY</div>
+                <div class= "im1">INCOME</div>
+                
+            </div>
             <div class="r8class" id="right8">
                 <div id="r81"></div>
                 <div id ="r82"></div>
@@ -314,7 +540,13 @@
     </div>
     <div class="sixth" id ="section6">
         <div class="sixthleft"></div>
-        <div class="sixthright"></div>
+        <div class="sixthright" style ="float: right">
+
+            <i class="fa fa-minus" aria-hidden="true" style="float: right;font-size: 320%;color: darkgrey"></i>
+            &nbsp;&nbsp;<i class="fa fa-minus" aria-hidden="true"style="float:right;font-size: 320%;color: darkgrey"></i>
+            &nbsp;&nbsp;<i class="fa fa-minus" aria-hidden="true" style="float:right;  font-size: 320%;color: darkgrey"></i>
+
+        </div>
     </div>
 
 </div>
