@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
@@ -72,19 +72,49 @@
         #inner1sec2left{
             height: auto;
             position:relative;
-            width:50%;
+            width:57%;
 
         }
         #middle{
-            height: auto;
-            width: 30%;
+            margin-top: 5%;
+            height: 60%;
+            width: 20%;
             position: relative;
+            background-image: url("user.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100% 100%;
+            border-radius: 50%;
 
         }
+        #name{
+            margin-left: -3%;
+            margin-top: 12%;
+            font-size: large;
+            color: white;
+        }
+
         #inner1sec2right{
             height:auto;
             position: relative;
             width:20%;
+        }
+        #inner2sec2left{
+            color:grey;
+            font-size: larger;
+            margin-top: 2.5%;
+            height: auto;
+            width: 50%;
+            margin-left: 5%;
+        }
+        #inner2sec2left{
+            height:auto;
+            width:50%;
+            margin-top: 3.5%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            flex-grow: inherit;
         }
         .third{
             display:flex;
@@ -232,6 +262,8 @@
         }
         #right6{
             height:9%;
+            color: white;
+            margin-left: 2%;
 
         }
         #right7{
@@ -265,7 +297,7 @@
             height: 135px;
             width: 108px;
             margin-top: 5.2%;
-
+            color: grey;
 
         }
 
@@ -280,6 +312,16 @@
             margin-left: 2%;
             margin-right: 2%;
         }
+        .sixthleft{
+            height: auto;
+            position: relative;
+            width: 50%;
+        }
+        .sixthright{
+            height: auto;
+            position: relative;
+            width: 50%;
+        }
         .dots{
             display: inline;
             margin-top: 3.5%;
@@ -287,6 +329,14 @@
             color: grey;
             font-size: larger;
 
+        }
+        .sec2ri8{
+            height: 33%;
+            width:auto;
+            font-size: larger;
+            color: grey ;
+            text-emphasis: grey;
+            margin-top: 3%;
         }
 
 
@@ -320,25 +370,43 @@
                 </p>
             </div>
             <div id ="middle">
-                <i class="fa fa-user-circle"  style="font-size: 150%;
-                margin-top:20%; height:50%;width:50%;"></i>
-                <i class="fa fa-user-circle" aria-hidden="true"></i>
-                <i class="fas fa-user-circle"></i>
+
             </div>
+            <div  style="height:30px;width:30px; border-radius:50%;background-color: white;margin-top: 5%;color: grey;font-size: larger">
+                <center>3</center>
+                </div>
+            <div id="name">Jacquilene ROIS</div>
             <div id="inner1sec2right">
 
             <i class="fa fa-cog" style="float: right;margin-left: 95%;position: relative;font-size: 150%;color: white" >
 
             </i>
-                <i class="fa fa-bell-o" aria-hidden="true" style="float:right;margin-top: 26%;font-size: 150%;color:white;"></i>
+                <i class="fa fa-bell-o" aria-hidden="true" style="float:right;margin-top: 69%;font-size: 150%;color:white;"></i>
             </div>
         </div>
         <div class="inner2second" id="inner2sec2">
             <div id="inner2sec2left">
-
+                <b>YOUR PREMIER ACCOUNT</b><BR>
+                <span style="font-size: xx-large">
+                <i class="fa fa-gbp" aria-hidden="true"></i>
+                <b>5,879</b></span>
+                <div>
+                <select style="background-color: white; color:gray();
+                width: 250px;height:30px;border-radius: 5%;border-color: darkgrey;">
+                    <option>YOUR ACCOUNT TYPE</option>
+                <OPTION>SAVING</OPTION>
+                <OPTION>CURRENT</OPTION>
+                </select>
+            </div>
             </div>
             <div id="inner2sec2right">
-
+                <div CLASS="sec2ri8"><b> >VIEW STATEMENT</b><hr></div>
+                <div class ="sec2ri8">
+                    <b > MAKE A QUICK TRANSFER</b><hr>
+                </div>
+                <div class="sec2ri8">
+                    <b> MORE OPTIONS</b>
+                </div>
             </div>
         </div>
 
@@ -420,17 +488,25 @@
                 OUR SERVICES AND PRODUCTS
                 <br><br>
                 <span style="font-size: xx-large;color: white"> <b><u>Product</u> Name</b></span>
-                <br><div class ="test" style="display: flex"><div> <i class="fa fa-minus"  style="font-size: 500%;color: white">
+                <div class ="test" style="display: flex;height:20%;">
+                    <div> <i class="fa fa-minus"  style="font-size: 400%;color: white">
 
-                 </i></div>
-                <div style="height:20px;margin-left: 70%; width: 20px;background-color: white;border-radius: 50%"></div>
-                <br></div>
-                <textarea rows="2" cols="30"></textarea>
+                    </i>
+                </div>
+                <div style="margin-top: 5%">
+                <form name="product" action="#" method="">
+                <textarea rows="2" cols="25" name="productName" id="name" style="margin-left: 2%"></textarea>
 
                 <br>
-                <br>
-                <button style="height: 30px; width:140px;background-color: white;color: grey;margin-left:15%;border-radius: 2%">
-                    DISCOVER NOW</button>
+
+                <input type="submit" value ="DISCOVER NOW" style="height: 30px; width:140px;background-color: white;color: grey;margin-left:15%;
+                border-radius: 2%">
+                     </input>
+                </form>
+                </div>
+                    <div style="background-image:url('pictask2sunm.png');height: 204px;width: 245px;margin-left: 7%;margin-right:-2%;margin-top:2.65% "></div>
+
+                </div>
 
             </div>
             <div class="inner5leftBottom">
@@ -448,23 +524,48 @@
 
                     </div>
                     <div class="circle2" style="display: flex;margin-left: 20%;">
-                        <div id="18" style="font-size: xx-large;height:50px;width:50px;border-radius: 50%;background-color: grey">
+                        <div id="18" style="font-size: xx-large;height:50px;width:50px;border-radius: 50%;background-color: grey;margin-top: -1%">
                             <center>18</center>
                         </div>
                         <div id="8" style="margin-left:33%;height:35px;width:35px;font-size: xx-large; border-radius:50%;background-color: darkgrey">
                             <center>8</center>
                         </div>
-
                     </div>
-                    <div class="sign" style="display: flex">
-                        <div id="inSign" style="margin-left:3%;height:35px;width:35px;font-size: xx-large; border-radius:50%;background-color: darkgrey"></div>
-                        &nbsp;&nbsp;<div style="color: grey">important dates of month for the payment</div>
+                    <div class="sign" style="display: flex;background-image: url('task2img1.png');margin-left: 1.5%;margin-right: 1.5%;margin-bottom: 1.5%">
+                        <div id="inSign" style="margin-left:3%;height:35px;width:35px;font-size: xx-large;
+                         border-radius:50%;background-color: darkgrey"></div>
+                        &nbsp;&nbsp;
+                        <div style="color: grey;">important dates of month for the payment</div>
+
                     </div>
                 </div>
-                <div id="ILB2"></div>
-            </div>
+                <div id="ILB2">
+                    <span style="font-size: larger;margin-left: 4%;margin-top:7%;color: grey;padding: 1.5%">
+                        STOCK MARKET</span>
+                    <br>
+                    <div style="background-image: url('pictask2mountain.png');margin-left:15%;
+                    margin-top:1%;height: 204px;width: 245px">
 
-        </div >
+                    </div>
+                    <div style="display: flex;margin-left: 3%;justify-content: space-around;
+                         background-image: url('task2img1.png');margin-right: 3%;">
+                        <div style="height: 25px;width: 25px;border-radius: 50%;
+                        background-color: darkgrey">
+
+                        </div>
+                        <div style="margin-right: 2%;">
+                            <div style="height: 5px;width: 250px;border-radius:8%;
+                            background-color: darkgrey;margin-top: 3%"></div>
+                            <div style="height: 5px;width: 250px;border-radius:8%
+                            ;background-color: darkgrey;margin-top: 3%"></div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                </div>
+
+
+
         <div class = "fifthInnerRight">
             <div id="right1">
                 <i class="fa fa-credit-card" style="margin-top: 2%;font-size: large;color: white"></i>&nbsp; &nbsp;
@@ -516,7 +617,9 @@
                     <i class="fa fa-gbp" aria-hidden="true"></i>+449.00
                 </b></span>
             </div>
-            <div id="right6"></div>
+            <div id="right6"><br>
+                <span><u> 10+ see more transaction </u></span> <span style="float: right"><u>All transaction in February </u></span>
+            </div>
             <div id="right7">
                <!-- <img src="pictask2icn_jvn_icon.ico" height="200%" width="200%">
                 <img src="pictask2icn_jvn_icon.ico" height="200%" width="200%">
@@ -524,27 +627,105 @@
                 <div style="height: auto;width: 40% ; margin-top: 4%;margin-left: 3%;font-size: small;color: grey">
                     <b> TOTAL SPENDINGS OF FEBRUARY</b>
                    <br>
+                    <div style="display: flex">
+                        <div id="areaChart">    <i class="fa fa-area-chart" aria-hidden="true" style="font-size: 600%"></i></div>
+                        <div style="font-size: xx-large;margin-top: 4%"><i class="fa fa-gbp" aria-hidden="true"></i>34.500
+                            <div style="height: 5px;width: 70px;border-radius:8%;
+                            background-color: darkgrey;margin-top: 3%;margin-left: 15%"></div>
+                            <div style="height: 5px;width: 70px;border-radius:8%
+                            ;background-color: darkgrey;margin-top: 3%;margin-left: 15%"></div>
 
-                <i class="fa fa-area-chart" aria-hidden="true" style="font-size: 600%"></i>
+                        </div>
                     </div>
-                <div class="im1"><span style="margin-top: -3%">LIVING</span></div>
-                <div class="im1">FAMILY</div>
-                <div class= "im1">INCOME</div>
+                    <div>
+                        <div style="height: 5px;width: 250px;border-radius:8%;
+                            background-color: darkgrey;margin-top: 3%"></div>
+                        <div style="height: 5px;width: 250px;border-radius:8%
+                            ;background-color: darkgrey;margin-top: 3%"></div>
+                    </div>
+
+                </div>
+                <div class="im1" style="color: grey"><span style="margin-top: -3%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LIVING</span></div>
+                <div class="im1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FAMILY</div>
+                <div class= "im1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INCOME</div>
                 
             </div>
             <div class="r8class" id="right8">
-                <div id="r81"></div>
-                <div id ="r82"></div>
+                <div id="r81">
+                    <div id="r8class"style="color:grey;margin-top: 5%;margin-left: 5%">CUSTOMER SURVEY</div>
+                    <div id="lines" style="margin-left: 5%">
+                        <div style="height: 5px;width: 250px;border-radius:8%;
+                            background-color: darkgrey;margin-top: 3%"></div>
+                        <div style="height: 5px;width: 250px;border-radius:8%
+                            ;background-color: darkgrey;margin-top: 3%"></div>
+                    </div>
+                    <div class="circleLines" style="display: flex;margin-left: 5%;margin-top: 4%">
+                       <!-- <div style="border-width: thick;border-color: darkgrey;border-radius: 50%;width: 25px;height: 25px">
+
+                        </div>-->
+                        <div  style="height:24px ;width:24px; border-radius:50%;background-color: darkgrey">
+                            </div>
+                        <div style="height: 5px;width: 40px;border-radius:8%
+                            ;background-color: darkgrey;margin-top: 3%;margin-left: 1%"></div>
+                        <div  style="height:24px;width:24px; border-radius:50%;background-color: darkgrey;margin-left: 40%">
+                            </div>
+                        <div style="height: 5px;width: 40px;border-radius:8%
+                            ;background-color: darkgrey;margin-top: 3%;margin-left: 1%"></div>
+
+                    </div>
+                    <form name="dontKnow">
+                    <input type="submit" value="SEND" style="border-radius: 10%;
+                            background-color: white; color:grey ;width: 220px;font-size:larger;height:30px;margin-top: 6%;
+                            border-color: darkgrey;border-width: medium;margin-left: 10%">
+                    </form>
+
+                </div>
+                <div id ="r82">
+                    <div style="color:grey;margin-top: 5%;margin-left: 5%"> CURRENCY</div>
+                    <div id="conForm" style="margin-left: 8%;margin-top: 2%">
+                        <form name="converter" method="" action="#">
+                            <select style="background-color: white; color:gray() ;width: 100px;height:30px;border-radius: 15%;border-color: darkgrey;border-width: medium">
+                                <option>
+                                    <i class="fa fa-gbp" aria-hidden="true"></i>1500
+                                </option>
+                                <option><i class="fa fa-gbp" aria-hidden="true"></i>2000</option>
+                                <option><i class="fa fa-gbp" aria-hidden="true"></i>2500</option>
+                                <option><i class="fa fa-gbp" aria-hidden="true"></i>3000</option>
+                            </select>
+                            &nbsp;&nbsp;&nbsp;
+
+                            <select style="background-color: white; color:gray() ;width: 100px;height:30px;border-radius: 15%;border-color: darkgrey;border-width: medium">
+                                <option>
+                                    <i class="fa fa-gbp" aria-hidden="true"></i>1500
+                                </option>
+                                <option><i class="fa fa-gbp" aria-hidden="true"></i>2000</option>
+                                <option><i class="fa fa-gbp" aria-hidden="true"></i>2500</option>
+                                <option><i class="fa fa-gbp" aria-hidden="true"></i>3000</option>
+                            </select>
+                            <input type="text" placeholder="to currency" style="border-radius: 10%;border-color: darkgrey;border-width: medium;
+                            background-color: white; color:gray() ;width: 220px;font-size:larger;height:30px;margin-top: 2%">
+                            <input type="submit" value="SHOW CURRENCY" style="border-radius: 10%;
+                            background-color: white; color:grey ;width: 220px;font-size:larger;height:30px;margin-top: 2%;
+                            border-color: darkgrey;border-width: medium">
+
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <div class="sixth" id ="section6">
-        <div class="sixthleft"></div>
-        <div class="sixthright" style ="float: right">
+        <div class="sixthleft">
+            <div style="height: 5px;width: 250px;border-radius:8%;
+                            background-color: darkgrey;margin-top: 3%"></div>
+            <div style="height: 5px;width: 100px;border-radius:8%
+                            ;background-color: darkgrey;margin-top: 1.5%"></div>
+        </div>
+        <div class="sixthright" style ="float: right;justify-content: space-around">
 
-            <i class="fa fa-minus" aria-hidden="true" style="float: right;font-size: 320%;color: darkgrey"></i>
-            &nbsp;&nbsp;<i class="fa fa-minus" aria-hidden="true"style="float:right;font-size: 320%;color: darkgrey"></i>
-            &nbsp;&nbsp;<i class="fa fa-minus" aria-hidden="true" style="float:right;  font-size: 320%;color: darkgrey"></i>
+            <i class="fa fa-minus" aria-hidden="true" style="float: right;font-size: 320%;color: darkgrey;margin-left: 5%;"></i>
+            <i class="fa fa-minus" aria-hidden="true" style="float:right;font-size: 320%;color: darkgrey;margin-left: 5%;"></i>
+            <i class="fa fa-minus" aria-hidden="true" style="float:right;  font-size: 320%;color: darkgrey;margin-left: 5%;"></i>
 
         </div>
     </div>
