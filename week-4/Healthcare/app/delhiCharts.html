@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <meta charset="UTF-8">
+    <title>Healthcare</title>
+  <link rel="stylesheet" href="styles/main.scss">
+
+  <link rel="stylesheet" href="styles/index.css">
+
+</head>
+<body>
+
+<header class="header">
+  <nav class="menu">
+    <div>
+      <a href="index.html#homeid">  <div class="navitem" style=" border: white;margin-top: 2.5%;margin-left: 2.5%;font-size: xx-large">Home</div></a>
+      <a href="index.html#dataAnalysis"> <div  class ="navitem" style="float:right;border-color: white;margin-top:-2.5%;margin-right: 2.5%;font-size: xx-large;">Delhi Data Analysis</div></a>
+    </div>
+  </nav>
+</header>
+<div class="chartContainer">
+  <div class="first">
+    <div class="delhiChart" id="northChart">
+      <canvas id="Adisease" height ="40" width ="80"></canvas>
+    </div>
+    <div class="delhiChart" id="southChart">
+      <canvas id="Bdisease" height ="40" width ="80%"></canvas>
+    </div>
+  </div>
+  <div class="first">
+    <div class="delhiChart" id="eastChart">
+      <canvas id="Cdisease" height ="40" width ="80"></canvas>
+    </div>
+    <div class="delhiChart" id="westChart">
+      <canvas id="Ddisease" height ="40" width ="80"></canvas>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    e.src='https://www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+  ga('create','UA-XXXXX-X');ga('send','pageview');
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+<script src="index.js"></script>
+<script src="north.js"></script>
+<script src ="delhichart.js"></script>
+
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js scripts/plugins.js -->
+
+<!-- endbuild -->
+
+<!-- build:js scripts/main.js -->
+<script src="scripts/main.js"></script>
+</body>
+</html>
