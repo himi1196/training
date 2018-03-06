@@ -1,9 +1,9 @@
 
 function visualize(readings,typeOfChart,id,myLabel){
-  console.log("enter visualize");
+  //console.log("enter visualize");
   let passId= "#"+id;
   let ctx4 =$(passId)
-  console.log("here is ctx"+ctx4);
+  //console.log("here is ctx"+ctx4);
 
   let fourthChart = new Chart(ctx4, {
     type: typeOfChart,
@@ -59,7 +59,7 @@ function color(typeOfChart){
   if(typeOfChart==='line'){
    arrayColor.push('rgba('+Math.floor((Math.random()*255))+','
      +Math.floor((Math.random( )*255))+','+Math.floor((Math.random()*255))+','+1+')');
-    console.log(arrayColor);
+   // console.log(arrayColor);
    return arrayColor;
   }
 
@@ -76,7 +76,7 @@ function showChart(num) {
   function transform(j) {
     // Yay, `j` is a JavaScript object
     // console.log(j[0]);
-    console.log("enter transform");
+    //console.log("enter transform");
     let i = 6, k = 0;
     while (k < 12) {
       // console.log("hello");
@@ -103,7 +103,7 @@ function showChart(num) {
 
   let index=num-1;
     $.getJSON(urlContainer[index],function(data){
-      console.log(urlContainer[index]);
+      //console.log(urlContainer[index]);
     transform(data);
   })
 

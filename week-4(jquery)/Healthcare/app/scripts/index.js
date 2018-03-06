@@ -1,4 +1,6 @@
 
+
+// change image on home page
 function changeImage() {
 
   $('#homeid').css('background-image','url(./images/health6.jpg)');
@@ -6,13 +8,17 @@ function changeImage() {
 
 setTimeout(changeImage,1500);
 
+//open the generic page where charts will be displayed
+
 function loadpage(num) {
    window.open("delhiCharts.html?"+num,"_self");
 };
 
+// to provide a number to the clicked part
+
 $('.delhi').click(function (event) {
   var id =event.target.id;
-  console.log(id);
+
   if(id==='north'){
     loadpage(1);
   }
